@@ -13,3 +13,7 @@ def our_landing_page():
 @app.route("/forum")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
 def our_landing_page():
         return render_template("forum_landing_page.html") #runs the fact that this url shows the forum page
+
+@app.route("/code_of_conduct")    #@ makes it a 'decorator'. line tells peple where to look inside flask framework. Decorators always followed by function.
+def our_landing_page():
+        return render_template("Code_of_Conduct.html") #runs the fact that this url shows the code of conduct page
