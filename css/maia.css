@@ -1,0 +1,38 @@
+.about-navs a :hoover {
+    color: #0D1EC6;
+  }
+
+  .about-navs a {
+    text-decoration: none;
+  
+}
+
+  body {
+    background: rgb(228, 219, 221) ;
+    background-repeat: repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#container {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 220px;
+  margin-right: 320px ;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Oleo Script',;
+
+}
+
+h1{
+  font-size: 48px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.header h1{
+  font-size:190px;
+  text-align: center;
+  text-decoration: underline;
+}
