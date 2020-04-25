@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
     <!-- Required meta tags -->
+    <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/css/maia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="../static/css/maia.css">
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-       <!-- scripts -->
-           <script src="../static/js/appjavascript0.js"></script>
-           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-       <!-- title: CHANGE ME -->
-    <title>Ask a Question</title>
-</head>
+      <!-- stylesheets -->
+        <link rel="stylesheet" href="../static/css/stylesheet0.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="../static/js/appjavascript0.js"></script>
+ 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+        
     <body>
-
-        <div id="banner">
+<!-- Code for button -->
+    <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
+      <b class="fa my-float">!</b> </a>
+    <!-- end of button code-->
+      <div class="sticky-top" id="banner">
             <style>
                 div.background {
                   background-image: url(../images/strong.jpg);
@@ -38,7 +44,7 @@
                   margin: 5%;
                   font-weight: bold;
                   color: #000000;
-                  font-size: 50px;
+                  font-size: 80px;
                   text-align: center;
                   font-weight: bold;
                 }
@@ -51,44 +57,84 @@
                 </div>
                 
                 <!--nav bar-->
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                  <a class="navbar-brand" href="#">Maia</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/landing_page.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/resources_page.html">Resources</a>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown link
+                         Forum <span class="sr-only">(current)</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">Forum Chatroom</a>
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_new_question_page.html">Forum Questions<span class="sr-only">(current)</span></a>
+                        </div>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Others
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/Code_of_Conduct.html">Code of Conduct</a>
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/privacy_policy.html">Privacy Policy</a>
+                          
                         </div>
                       </li>
                     </ul>
                   </div>
                 </nav>
+      </div>
 
-        <h1>Ask a question</h1>
-        <div><p>Here you can anonymously ask a question of our community.
-            <br>
-            Please adhere to our <a href="../templates/Code_of_Conduct.html" target="_blank">Code of Conduct</a> while using this platform.
-        </p></div>
-    </body>
+  <div id=container color="white">
+
+          <h1>Ask a question</h1>
+          <div><p>Here you can anonymously ask a question of our community.
+              <br>
+              Please adhere to our <a href="/code_of_conduct" target="_blank">Code of Conduct</a> while using this platform.
+          </p>
+
+          <div class="row">
+            <div class="col-md-9" id="main-content">
+              <h2>Why was Maia set up?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+            enean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculuss.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+            enean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculuss.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+            venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+           </p>
+        <!--sidebar-->
+        </div>
+        <div class="col-md-3" id="sidebar">
+          <h2><i>Background story</i></h2>
+           <p>
+            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. A
+            enean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            </p>
+        </div>
+      </div>
+
+</div>
+      </body>
+
+
+  </div>    
     <footer>
-
+ 
     </footer>
 </html>

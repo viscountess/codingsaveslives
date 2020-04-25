@@ -1,14 +1,19 @@
-  
 <!DOCTYPE html>
 <html>
     <head>
         <title>Home</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../static/css/maia.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- stylesheets -->
+        <link rel="stylesheet" href="../static/css/stylesheet0.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="../static/js/appjavascript0.js"></script>
         <!--homepage spceific - welcome message-->
         <script src="../static/js/landing_page_js.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/maia.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -19,11 +24,14 @@
 
         <!--banner-->
 <body>
-               
+       <!-- Code for button -->
+  <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
+    <b class="fa my-float">!</b> </a>
+  <!-- end of button code-->          
     <div id="banner">
               <style>
                   div.background {
-                    background-image: url(../static/images/strong.jpg);
+                    background-image: url(../images/strong.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     border: 2px;
@@ -54,107 +62,227 @@
                   </div>
                   
                   <!--nav bar-->
-                  <nav class="navbar navbar navbar-expand-lg navbar-light"
-                   sticky-top >
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                     <a class="navbar-brand" href="#">Maia</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                       <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                          <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/landing_page.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
+                          <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources Page</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Others
-                            </a>
-                            
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="#">Code of Conduct</a>
-                              <a class="dropdown-item" href="#">Privacy Policy</a>
-                            </div>
-                          </li>
+                          <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/resources_page.html">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Forum <span class="sr-only">(current)</span>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">Forum Chatroom</a>
+                            <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_new_question_page.html">Forum Questions</a>
+                          </div>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Forum
+                            Others
                           </a>
-                          
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Forum Questions</a>
-                            <a class="dropdown-item" href="#">Forum Chat Room</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/Code_of_Conduct.html">Code of Conduct</a>
+                            <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/privacy_policy.html">Privacy Policy</a>
+                            
                           </div>
                         </li>
                       </ul>
                     </div>
                   </nav>
+        </div>
                  
-<!-- Code for button -->
-<a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
-  <b class="fa fa-plus my-float">!</b> </a>   
-<!-- end of button code-->
-    <div id=container color="white">
 
-        <div class="home">
+               
+ <div id=container color="white">
+        <div class="home text-align=justify">
             <h1>Homepage</h1>
         </div>
+<br>
+<br>
 
-        <div id="about-intro"> 
-            <div class="aboutpic">
-                <img src="../image/.png">
+        
+            
+          <div class="row">
+          <div class="col-md-9" id="main-content">
+
+            <div class="img_wheel">
+              <img src="../images/wheel.jpg" alt="Domestic Wheel" width="800px" height="800px">
             </div>
-            
-        <div class="aboutmaia">
-            
-            <p>Welcome to Maia meaning: <i>Mother</i>! </p>
-            
-            <p>
-                This will be the main content- who maia is, what we do, how we help<br>
-                 <i>etc</i>.<br>
-                <br>
-                <br>
-                If you are ready, then come explore...
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-                <br>[Testing text]
-            </p>
-        </div> 
+        
+          <p>
+            <i>Domestic abuse wheel</i>
+            </p>  
+        </p>
+      <!--sidebar-->
+      </div>
+      <div class="col-md-3" id="sidebar">
+        <h2>What is Domestic Abuse?</h2>
+        <p>
+          Domestic violence which can also be referred as intimate partner violence (IPV), domestic abuse or relationship abuse, is a pattern of behaviors 
+          used by one partner in an intimate relationship or 
+          marriage to dominate and control the other. Domestic violence and abuse are used for one purpose and one purpose only and that is to <strong>gain</strong> and <strong>maintain</strong> total control over you. 
+          An abuser does not think of “playing fair.” An abuser uses fear, guilt, shame, manipulation and intimidation to wear you down and keep you under their thumb.
+<br>
+          Domestic violence is no respecter of anyone. It can happen to anybody irregardless of your race, age, sexual orientation, religion or gender. It can happen to people who are married, living together 
+          or who are dating. And while women are more often victimized, men also experience abuse in other ways too including verbal and emotional abuse. The bottom line is that abusive behavior is never acceptable, whether from a man, woman, 
+          teenager, or an older adult. Every deserves to feel <strong>valued, respected, and safe. </strong>
+         </p>
+      </div>
+<br>
+      <div class="row">
+        <div class="col-md-10" id="main-content">
+      <p>
+        Domestic abuse often escalates from threats, then to verbal assault and lastly to violence. Although physical injury may pose as a more obvious danger, the emotional and psychological 
+        consequences of domestic abuse are also severe. Emotionally abusive relationships can lead to many devastating implications in the future. It can result destroying self-worth, 
+        may lead to anxiety and depression, make you feel helpless 
+        and alone. No one should have to endure this kind of pain—and your first step to breaking free is recognizing that your relationship is abusive.
+      <br>
+       </p>
+
+    </div>
+
+    <div class="col-md-11" id="sidebar">
+      <h2>Signs of an abusive relationship</h2>
+       <p>
+        Signs of an abusive relationship
+        There are many signs of an abusive relationship, and a fear of your partner is the most telling. If you feel like you have to walk on eggshells around them—constantly watching what you say and do in order to avoid a blow-up—chances are your relationship is unhealthy and abusive. Other signs include a partner who belittles you or tries to control you, and feelings of self-loathing, helplessness, and desperation.
+        
+        To determine whether your relationship is abusive, answer the questions below. The more “yes” answers, the more likely it is that you’re in an abusive relationship.
+        </p>
+    </div>
+  </div>
+
+  <div class="unlist text-align=center">
+  
+    <h4>Thoughts & Feelings</h4>
+      <ul>
+        <li>Feel incompetent with your partner?</li>
+        <li>Convinced that you may be the crazy one?</li>
+        <li>Feel fear everytime they are around?</li>
+        <li>Believe that you deserve to be hurt or mistreated?</li>
+        <li>Selective with your conversations in fear of bringing up a certain topics that may trigger anger in your partner?</li>
+        <li>Feeling emotionally numb or helpless?</li>
+      </ul>
+  </div>
+
+  <div class="unlist col-md-11 text-align=center">
+  
+    <h4>Violent behaviour & Threats</h4>
+
+     
+      <ul>
+        <li>Destroy your belongings?</li>
+        <li>Force you for sex?</li>
+        <li>Threaten to take your children away from you?</li>
+        <li>They are quick to anger?</li>
+        <li>Hurts or threaten to harm you or kill you?</li>
+        <li>Threaten to commit suicide if you decide to leave them?</li>
+      </ul>
+  </div>
+
+<div class="unlist col-md-11 text-align=center">
+    <h4>Very Controlling</h4>
+      <ul>
+        <li>Need permission to visit friends or family?</li>
+        <li>Extremely possessive/jealous?</li>
+        <li>Communication with others are limited?</li>
+        <li>Limit your access of transportation, money and phone?</li>
+        <li>Constantly breathing down your neck to see what you are doing?</li>
+        <li>Decides where you go and when you go?</li>
+      </ul>
+</div>
+<br>
+ 
+      <div class="col-md-11" id="sidebar">
+        <h2>Emotional Abuse - The Silent Widow</h2>
+        <p>
+            The aim of emotional abuse is to chip away at your feelings of self-worth and independence—leaving you feeling that there’s no way out of the relationship, or that without your abusive partner, you have nothing.
+<br>
+            Abusers who use emotional or psychological abuse often throw in threats of physical violence or other repercussions if you don’t do as they want.
+<br>
+              Emotional abuse includes verbal abuse such as yelling, name-calling, blaming, and shaming. Isolation, intimidation, and controlling behavior are also forms of emotional abuse.
+
+              <br>
+              
+              The scars of emotional abuse are very real and they run deep. You may think that physical abuse is far worse than emotional abuse, since physical violence can send you to the hospital and leave you with physical wounds. But emotional abuse can be just as damaging—sometimes even more so.
+
+              Domestic violence and abuse does not take place because of an abuser loses control over their behavior. In fact, abusive behavior and violence is a deliberate choice to gain control. Perpetrators use a variety of tactics to manipulate you and exert their power, including:
+<br>
+<br>
+              <strong>Dominance</strong> – Abusive individuals need to feel in charge of the relationship. They may make decisions for you and the family, tell you what to do, and expect you to obey without question. Your abuser may treat you like a servant, child, or even as their possession.
+<br>
+<br>
+              <strong>Humiliation</strong> – An abuser will do everything they can to lower your self-esteem or make you feel defective in some way. After all, if you believe you’re worthless and that no one else will want you, you’re less likely to leave. Insults, name-calling, shaming, and public put-downs are all weapons of abuse designed to erode your self-worth and make you feel powerless.
+<br>
+<br>
+              <strong>Isolation </strong>– In order to increase your dependence on them, an abusive partner will cut you off from the outside world. They may keep you from seeing family or friends, or even prevent you from going to work or school. You may have to ask permission to do anything, go anywhere, or see anyone.
+<br>
+<br>
+              <strong>Threats</strong> – Abusers commonly use threats to keep their partners from leaving or scare them into dropping charges. Your abuser may threaten to hurt or kill you, your children, other family members, or even pets. They may also threaten to commit suicide, file false charges against you, or report you to child services.
+<br>
+<br>
+              <strong>Intimidation</strong> – Your abuser may use a variety of intimidation tactics designed to scare you into submission. Such tactics include making threatening looks or gestures, smashing things in front of you, destroying property, hurting your pets, or putting weapons on display. The message behind these actions is that violent violent consequences will follow if you don’t obey.
+<br>
+<br>
+             <strong>Denial and blame </strong> – Abusers are adept at making excuses for the inexcusable. They may blame their abusive and violent behavior on a bad childhood, a bad day, or even on you and the kids, the victims of their abuse. They may minimize the abuse or deny that it occurred. Often, they will shift the responsibility on to you: somehow, their violent and abusive behavior is your fault.
+              </p>
+      </div>
+      </div>
+ </div>            
+</body>
+
+<br>
 
 
-          <div class="footer">
-              <footer>
-                Coding with real ❤️ </footer>
+                    <!-- Footer -->
+  <footer class="page-footer bg-primary font-small text-white pt-2">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+          
+              <!-- Grid row -->
+              <div class="row">
+          
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+                  <!-- Content -->
+                  <h5 class="text-uppercase"><strong>Maia</strong></h5>
+                  <p><i>We Are All Here With You.</i></p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+                  <!-- Links -->
+                  <h5 class="text-uppercase">I NEED HELP</h5>
+          
+                  <ul class="list-unstyled text-uppercase">
+                    <li>
+                      <a href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/resources_page.html">Resources</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+        
+              
+          </div>
+          
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="#"> Maia</a>
+            </div>
+            <!-- Copyright -->
+          
+  </footer>
                 
 <!-- Code for link to error page -->
 <div>
