@@ -6,6 +6,6 @@ var welcome = "Welcome to Maia! If you ever need to hide your screen, just click
 //m trigger;
 (document.addEventListener('keypress', function(event) {
     if (event.key === 'm');{
-        window.location.replace(href="..templates\Error_404_Display.html");
+        window.location.replace(href="Error_404_Display.html");
     }
   }));
