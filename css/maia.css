@@ -15,10 +15,10 @@
   margin-bottom: auto;
 }
 
-h1{
+.h1{
   font-size: 48px;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .header h1{
@@ -46,5 +46,9 @@ h1{
   font-size: 20px;
 }
 
+question_nav {
+        text-decoration: none;
+        color: aliceblue;
+}
 
 
