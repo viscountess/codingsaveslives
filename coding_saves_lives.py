@@ -11,9 +11,9 @@ def landing_page():
 def forum_landing_page():
         return render_template("forum_landing_page.html") #runs the forum landing page
 
-@app.route("/ask_a_question")
-def forum_new_question_page():
-        return render_template("forum_new_question_page.html") #runs the new question submission page
+@app.route("/forum/ask_a_question")
+def forum_ask_a_question():
+        return render_template("forum_ask_a_question.html") #runs the new question submission page
 
 #Resources
 @app.route("/resources")
