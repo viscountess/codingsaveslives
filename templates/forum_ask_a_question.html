@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../static/css/maia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- stylesheets -->
-      
+        <link rel="stylesheet" href="../static/css/stylesheet0.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="../static/js/appjavascript0.js"></script>
@@ -105,9 +105,38 @@
 
     <div class="row">
       <div class="col-md-10" id="main-content">    
+
           <h1>Ask a question</h1>
-
-
+<div>
+  <form>
+    <div class="form-group">
+      <label for="QuestionPrimaryInput">What would you like to ask?</label>
+      <input type="text" class="form-control" id="QuestionPrimaryInput" placeholder="...?">
+    </div>
+    <div class="form-group">
+      <label for="QuestionID">Question ID</label>
+      <input type="text" class="form-control" id="QuestionID" placeholder="Please suggest or generate an ID code, so you can find your question again.">
+      <button type="submit" class="btn btn-primary mb-2">Auto-generate Question ID</button>
+    </div>
+    <div class="form-group">
+      <label for="QuestionCategoryInput">Which category does your question fall into?</label>
+      <button type="submit" class="btn btn-primary mb-2">I'm not sure</button>
+      <select class="form-control" id="QuestionCategoryInput">
+        <option>Mental Health</option>
+        <option>Faily and Friends</option>
+        <option>Practical and Financial problems</option>
+        <option>Specific situation</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="QuestionDetailInput">Please provide more detail.</label>
+      <textarea class="form-control" id="QuestionDetailInput" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Submit Question</button>
+  </form>
+</div>
+</div></div>
   </div>    
   <footer class="page-footer bg-primary font-small text-white pt-4">
     <!-- Footer Links -->
@@ -156,3 +185,4 @@
   </div>
   </body>
 </html>
+
