@@ -12,9 +12,16 @@ def landing_page():
 def resources_landing_page():
         return render_template("resources_quiz_page.html") #runs the resources page
 
+@app.route("/resources_results", methods=['POST'])
+def resources_landing_page():
+        form_data = request.form
+        
+        return render_template("resources_results_page.html") #runs the resources quiz results page
+
 @app.route("/resources_list")
 def resources_landing_page():
-        return render_template("resources_list_page.html") #runs the resources page
+        return render_template("resources_list_page.html") #runs the resources list page
+
 
 #Decoy
 @app.route("/error_404_display")
