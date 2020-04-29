@@ -7,6 +7,7 @@
            
     <!-- stylesheets -->
         <link rel="stylesheet" href="../static/css/stylesheet0.css">
+<<<<<<< Updated upstream
                
            <!-- bootstrap stylesheet -->
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,3 +35,223 @@
 
     </footer>
 </html>
+=======
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="../static/js/appjavascript0.js"></script>
+ 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+        
+    <body>
+<!-- Code for button -->
+    <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
+      <b class="fa my-float">!</b> </a>
+    <!-- end of button code-->
+                
+                <!--nav bar-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+                  <a class="navbar-brand" href="#">Maia</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/landing_page.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/resources_page.html">Resources</a>
+                      </li>
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Forum <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">Forum Chatroom</a>
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_new_question_page.html">Forum Questions<span class="sr-only">(current)</span></a>
+                        </div>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Others
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/Code_of_Conduct.html">Code of Conduct</a>
+                          <a class="dropdown-item" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/privacy_policy.html">Privacy Policy</a>
+                          
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <form id="frmSearch" class="search2" method="get" action="default.html" />
+                  <input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+                  value="" style="left: 396px; top: 153px; width: 293px; height: 26px;" />
+                  <input class="search1" type="submit" name="submition" value="Search" style=" padding-  
+                  bottom:20px; left: 691px; top: 153px; height: 23px" />
+                  <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+
+                  <script type="text/javascript">
+                    document.getElementById('frmSearch').onsubmit = function() {
+                        window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                        return false;
+                    }
+                </script>
+        </div>
+      </nav>
+      </div>
+
+      <div id="banner">
+        <style>
+            div.background {
+              background-image: url(../images/maiabanner.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border: 4px;
+              padding: 160px;
+            }
+            
+            div.transbox {
+              margin: 40px;
+              padding: 5px;
+              border: 1px white;
+      
+            }
+            div.transbox h1 {
+              margin: 5%;
+              font-weight: bold;
+              color: #000000;
+              font-size: 80px;
+              text-align: center;
+              font-weight: bold;
+            }
+            </style>
+    
+          <div class="background">
+            <div class="Head">
+            <h1></h1>
+            </div>
+          </div>
+
+  <div id=container color="white">
+
+    <div class="row">
+      <div class="col-md-10" id="main-content">    
+          <h1>Ask a question</h1>
+          <div><p>Here you can anonymously ask and read some of the most frequently asked question from our community.
+          </p>
+<br>
+          <div class="card border-success mb-3 bg-primary text-white text-center p-3" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p><i>I think this is abuse but how do I know?</i></p>
+              <medium>
+                <a class="question_nav" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">What is Abuse?</a>
+              </medium>
+            </blockquote>
+          </div>
+          <div class="card border-success mb-3 bg-light bg-secondary text-black text-center p-3" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p><i>I get really scared when they are around. Is this normal?</i></p>
+                <medium>
+                  <a class="question_nav" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">Product of Abuse?</a>
+                </medium>
+            </blockquote>
+          </div>
+
+          <div class="card border-success mb-3 bg-primary bg-secondary text-white text-center p-3" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p><i>Who can I speak to?</i></p>
+              <medium>
+                Head Over to the <a href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">chatroom</a> / <a href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">Resource page</a> 
+              </medium>
+            </blockquote>
+          </div>
+          <div class="card border-success mb-3 bg-info text-white text-center p-3" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p><i>I am tired of this, will this season ever end?</i></p>
+              <medium>
+                <a class="question_nav" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">What is Abuse?</a>
+              </medium>
+            </blockquote>
+          </div>
+
+          <div class="card border-success mb-3 bg-warning text-white text-center p-3" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p><i>Am I overthinking it or am I the crazy one?</i></p>
+              <medium>
+                No you may be getting abused. Take a look at :<a class="question_nav" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/about_us.html">Don't blame yourself</a>
+              </medium>
+            </blockquote>
+          </div>
+
+          <div class="card border-success mb-3 bg-success text-white text-center" style="max-width:50rem; height: 6rem;">
+            <blockquote class="blockquote mb-0">
+              <p>Is it too late to leave and what about my children?</p>
+              <medium>
+                It is never too late if you feel like your life is in danger. <a class="question_nav" href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/forum_landing_page.html">Decisions</a>
+              </medium>
+            </blockquote>
+          </div>
+        </div>      
+      </div>
+        
+
+
+  </div>
+</body>
+
+
+  </div>    
+  <footer class="page-footer bg-primary font-small text-white pt-4">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase"><strong>Maia</strong></h5>
+          <p><i>We Are All Here With You.</i></p>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">I NEED HELP</h5>
+  
+          <ul class="list-unstyled text-uppercase">
+            <li>
+              <a href="file:///Users/hilda.amponsah/Documents/github/CodingSavesLives/codingsaveslives/templates/resources_page.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+
+    </div>
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Maia</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <div>
+    <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html">
+      <p>Click here to hide the page. You will not be able to press back to return here.</p>
+      </a>   
+    </div>
+                  
+  </div>
+  </body>
+</html>
+>>>>>>> Stashed changes
