@@ -9,17 +9,17 @@ def landing_page():
 
 #Resources
 @app.route("/resources")
-def resources_landing_page():
+def resources():
         return render_template("resources_quiz_page.html") #runs the resources page
 
 @app.route("/resources_results", methods=['POST'])
-def resources_landing_page():
+def resources_results():
         form_data = request.form
-        
+
         return render_template("resources_results_page.html") #runs the resources quiz results page
 
 @app.route("/resources_list")
-def resources_landing_page():
+def resources_list():
         return render_template("resources_list_page.html") #runs the resources list page
 
 
@@ -38,7 +38,7 @@ def privacy_policy():
         return render_template("privacy_policy.html") #runs the fact that this url shows the PP page
 
 @app.route("/identify_it")
-def privacy_policy():
+def what_is_domestic_abuse():
         return render_template("what_is_domestic_abuse.html") #runs the fact that this url shows the PP page
 
 #debugging
