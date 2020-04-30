@@ -16,7 +16,36 @@ def resources():
 def resources_results():
         form_data = request.form
 
-        return render_template("resources_results_page.html") #runs the resources quiz results page
+        GenderSelect = form_data["GenderSelect"]
+        LGBTQIASupport = form_data["LGBTQIASupport"]
+        HousingSupport = form_data["HousingSupport"]
+        
+        if GenderSelect == "Male" and LGBTQIASupport == "Yes" and HousingSupport == "Yes":
+                return render_template("Results_page_MLH_FLH_XLH.html")
+        elif GenderSelect == "Male" and LGBTQIASupport == "Yes" and HousingSupport == "No":
+                return render_template("Results_page_MLHX.html")
+        elif GenderSelect == "Male" and LGBTQIASupport == "No" and HousingSupport == "Yes":
+                return render_template("Results_page_MXH_FXH_XXH.html")
+        elif GenderSelect == "Male" and LGBTQIASupport == "No" and HousingSupport == "No":
+                return render_template("Results_page_MXX.html")
+        elif GenderSelect == "Female" and LGBTQIASupport == "Yes" and HousingSupport == "Yes":
+                return render_template("Results_page_MLH_FLH_XLH.html")
+        elif GenderSelect == "Female" and LGBTQIASupport == "Yes" and HousingSupport == "No":
+                return render_template("Results_page_FLX.html")
+        elif GenderSelect == "Female" and LGBTQIASupport == "No" and HousingSupport == "Yes":
+                return render_template("Results_page_MXH_FXH_XXH.html")
+        elif GenderSelect == "Female" and LGBTQIASupport == "No" and HousingSupport == "No":
+                return render_template("Results_page_FXX.html")
+        elif GenderSelect == "Other" and LGBTQIASupport == "Yes" and HousingSupport == "Yes":
+                return render_template("Results_page_MLH_FLH_XLH.html")
+        elif GenderSelect == "Other" and LGBTQIASupport == "Yes" and HousingSupport == "No":
+                return render_template("Results_page_XLX.html")
+        elif GenderSelect == "Other" and LGBTQIASupport == "No" and HousingSupport == "Yes":
+                return render_template("Results_page_MXH_FXH_XXH.html")
+        elif GenderSelect == "Other" and LGBTQIASupport == "No" and HousingSupport == "No":
+                return render_template("Results_page_XXX.html")
+        else:
+                return render_template("resources_list_page.html")
 
 @app.route("/resources_list")
 def resources_list():

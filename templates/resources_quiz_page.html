@@ -24,84 +24,50 @@
        <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
         <b class="fa my-float">!</b> </a>
       <!-- end of button code-->   
-      <!-- code for header-->       
-        <div id="banner">
-                  <style>
-                      div.background {
-                        background-image: url(../images/strong.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        border: 2px;
-                        padding: 30px;
-                      }
-                      
-                      div.transbox {
-                        margin: 40px;
-                        padding: 5px;
-                        
-                        border: 1px white;
-                
-                      }
-                      div.transbox h1 {
-                        margin: 5%;
-                        font-weight: bold;
-                        color: #000000;
-                        font-size: 50px;
-                        text-align: center;
-                        font-weight: bold;
-                      }
-                      </style>
-              
-                      <div class="background">
-                          <div class="Header">
-                          <h1> Maia</h1>
-                      </div>
-                      </div>
-                      
-                      <!--nav bar-->
-                      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                        <a class="navbar-brand" href="landing_page.html">Maia</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="landing_page.html">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="about_us.html">About us</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="what_is_domestic_abuse.html">What is domestic abuse?</a>
-                            </li>
-                            <li class="nav-item dropdown active">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Get help<span class="sr-only">(current)</span>
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="resources_quiz_page.html">I don't know where to Look</a>
-                                <a class="dropdown-item" href="resources_list_page.html">List of charities</a>
-                              </div>
-                              
-                            </li>
-                              </div>
-                            </li>
-                          </ul>
-                        
-                <form class="form-inline my-6 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                </div>
-              </nav>
-            </div>
-    
-<br>
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Maia</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/identify_it">What is domestic abuse?</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Get help<span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/resources">I don't know where to look</a>
+          <a class="dropdown-item" href="/resources_list">List of charities</a>
+        </div>
+        
+      </li>
+        </div>
+      </li>
+    </ul>
+  
+<form class="form-inline my-6 my-lg-0">
+<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+</nav>
+</div>
+
+
 
 <!--form-->
 <h1>What support do you need?</h1>
-<form>
+<form method="post" action="/resources_results" onsubmit="return resources_results()">
   <div class="form-group">
     <label for="GenderSelect">Please select your gender</label>
     <select class="form-control" id="GenderSelect">
@@ -109,8 +75,6 @@
       <option>Female</option>
       <option>Other</option>
     </select>
-  </div>
-  <div class="form-group">
     <div class="form_box">
     <label for="LGBTQIASupport">Do you require specific LGBTQIA+ support?</label>
     <select class="form-control" id="LGBTQIASupport">
@@ -118,39 +82,11 @@
       <option>No</option>
     </select>
   </div>
-  <div class="form-group">
-    <div><label for="SupportRequirements">Do you require any of the following specific support? </label></div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="SupportRequirements1" value="Kids">
-    <label class="form-check-label" for="SupportRequirements1">Support for children/teenagers</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="SupportRequirements2" value="Housing">
-    <label class="form-check-label" for="SupportRequirements2">Support with housing</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="SupportRequirements3" value="MEcommunities" >
-    <label class="form-check-label" for="SupportRequirements3">Support for minority ethnic communities/cultures</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="SupportRequirements4" value="hearing" >
-    <label class="form-check-label" for="SupportRequirements4">Call support for the hard of hearing</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" id="SupportRequirements5" value="translation">
-    <label class="form-check-label" for="SupportRequirements5">Support in a language other than English</label>
-  </div>
-  </div>
-  <div class="form-group">
-    <label for="LocalSupport">Would you be interested in any services local to these areas?</label>
-    <select class="form-control" id="LocalSupport">
-      <option>Wales</option>
-      <option>Scotland</option>
-      <option>Northern Ireland</option>
-      <option>London</option>
-      <option>Manchester</option>
-      <option>East Anglia</option>
-      <option>None of the above</option>
+  <div class="form_box">
+    <label for="HousingSupport">Do you require specific support regarding housing or accommodation?</label>
+    <select class="form-control" id="HousingSupport">
+      <option>Yes</option>
+      <option>No</option>
     </select>
   </div>
   <div class="form-check">
@@ -160,7 +96,7 @@
     </label>
   </div>
 <div><br>
-  <a href="resources_results_page.html><button type="submit" id="submit-button" class="btn btn-primary">Submit</button></a>
+  <button type="submit" id="submit-button" class="btn btn-primary">Submit</button></a>
  </div></div>
 </form>
 <p><br></p>
