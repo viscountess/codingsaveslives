@@ -28,11 +28,11 @@
     <div id="banner">
               <style>
                   div.background {
-                    background-image: url(../images/strong.jpg);
+                    background-image: url(../static/images/Maiabanner.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     border: 2px;
-                    padding: 30px;
+                    padding: 190px;
                   }
                   
                   div.transbox {
@@ -54,7 +54,7 @@
           
                   <div class="background">
                       <div class="Header">
-                      <h1> Maia</h1>
+                      <h1></h1>
                   </div>
                   </div>
                   
@@ -89,14 +89,29 @@
                         </li>
                       </ul>
                     
-            <form class="form-inline my-6 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                      <form id="frmSearch" autocomplete="off" class="search2" method="get" action="default.html" />
+                      <input class="search2"  autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+                      value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
+                      <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding-  
+                      bottom:20px; left: 691px; top: 153px; height: 23px" />
+                      <input class="search2" type="hidden" autocomplete="off" name="sitesearch" value="default.html" />
+    
+                      <script type="text/javascript">
+                        document.getElementById('frmSearch').onsubmit = function() {
+                            window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                            return false;
+                          
+                        }
+                    </script>
             </div>
           </nav>
         </div>
-                 
+      </li>
+    </ul>
+</div>
+</nav>
+</div>
+
 
                
  <div id=container color="white">
@@ -112,7 +127,7 @@
           <div class="col-md-9" id="main-content">
 
             <div class="img_wheel">
-              <img src="../images/wheel.jpg" alt="Domestic Wheel" width="800px" height="800px">
+              <img src="../static/images/wheel.jpg" alt="Domestic Wheel" width="800px" height="800px">
             </div>
         
           <p>
