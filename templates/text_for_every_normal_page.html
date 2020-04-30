@@ -22,7 +22,7 @@
         <div id="banner">
                   <style>
                       div.background {
-                        background-image: url(../images/strong.jpg);
+                        background-image: url(../images/Maiabanner.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
                         border: 2px;
@@ -53,7 +53,7 @@
                       </div>
                       
                       <!--nav bar-->
-                      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                      <nav class="navbar navbar-expand-lg navbar-dark bg-info">
                         <a class="navbar-brand" href="landing_page.html">Maia</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -83,10 +83,19 @@
                             </li>
                           </ul>
                         
-                <form class="form-inline my-6 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                          <form id="frmSearch" class="search2" method="get" action="default.html" />
+                          <input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+                          value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
+                          <input class="search1" type="submit" name="submition" value="Search" style=" padding-  
+                          bottom:20px; left: 691px; top: 153px; height: 23px" />
+                          <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+        
+                          <script type="text/javascript">
+                            document.getElementById('frmSearch').onsubmit = function() {
+                                window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                                return false;
+                            }
+                        </script>
                 </div>
               </nav>
             </div> 
@@ -98,7 +107,7 @@
 
 
 <!-- Footer -->
-<footer class="page-footer bg-primary font-small text-white pt-2">
+<footer class="page-footer bg-info font-small text-white pt-2">
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left">
 
