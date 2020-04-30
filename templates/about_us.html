@@ -25,37 +25,11 @@
   <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
     <b class="fa my-float">!</b> </a>
   <!-- end of button code-->   
-<<<<<<< Updated upstream
-<!--nav bar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">Maia</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/identify_it">What is domestic abuse?</a>
-      </li>
-      <li class="nav-item dropdown active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Get help<span class="sr-only">(current)</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/resources">I don't know where to look</a>
-          <a class="dropdown-item" href="/resources_list">List of charities</a>
-=======
   <!-- code for header-->       
     <div id="banner">
               <style>
                   div.background {
-                    background-image: url(../images/Maiabanner.jpg);
+                    background-image: url(../static/images/Maiabanner.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     border: 2px;
@@ -112,16 +86,16 @@
                           
                         </li>
                           </div>
-                          <form id="frmSearch" class="search2" method="get" action="default.html" />
-                          <input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+                          <form id="frmSearch" class="search2" method="get" action="default.html" autocomplete="off" />
+                          <input class="search2" autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
                           value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
-                          <input class="search1" type="submit" name="submition" value="Search" style=" padding-  
+                          <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding-  
                           bottom:20px; left: 691px; top: 153px; height: 23px" />
                           <input class="search2" type="hidden" name="sitesearch" value="default.html" />
         
                           <script type="text/javascript">
                             document.getElementById('frmSearch').onsubmit = function() {
-                                window.location = 'http://www.google.com/search?q=site:yoursitename.com ' + document.getElementById('txtSearch').value;
+                                window.location = 'http://www.google.com/search?q=site:google.com ' + document.getElementById('txtSearch').value;
                                 return false;
                             }
                         </script>
@@ -130,18 +104,12 @@
                     </div>
             </div>
           </nav>
->>>>>>> Stashed changes
         </div>
         
       </li>
         </div>
       </li>
     </ul>
-  
-<form class="form-inline my-6 my-lg-0">
-<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-</form>
 </div>
 </nav>
 </div>
@@ -150,17 +118,14 @@
 
         <h1>About Maia</h1>
           
-<div id="about">
-      <div class="row_one">
-          <div class="col-md-8" id="main-content font-size-20px">
-            <p>
-              The meaning of Maia is mother, and pronounced as <i>"My-ah"</i>. Mothers are known to be caring, loving, kind, compassionate,
-              protectors, filled with love and wisdom, but not just that alone. They are that and very <strong>courageous</strong> and <strong>strong</strong>. 
-              As women, with or without a child, we bare these characteristics and hence this page bared the name Maia. Our hope is that
-              one through this platform, you will gain a sense of support and remember that you are not and do not have to 
-              ride these tides alone. 
-            </p>
       <!--sidebar-->
+      <div class="row">
+        <div class="col-md-8" id="main-content">
+          <div class="women">
+            <img src="../static/images/women.jpg" alt="Domestic Wheel" width="800px" height="800px">
+          </div>
+          
+
           </div id="vision">
           <div class="col-md-3" id="sidebar  font-size-20px">
             <h2><i>The Vision</i></h2>
@@ -173,17 +138,29 @@
               endure this any further.
               </p>
           </div>
+
+              <div id="about">
+                <div class="row_one">
+                    <div class="col-md-10" id="main-content font-size:20px">
+                      <p>
+                        The meaning of Maia is mother, and pronounced as <i>"My-ah"</i>. Mothers are known to be caring, loving, kind, compassionate,
+                        protectors, filled with love and wisdom, but not just that alone. They are that and very <strong>courageous</strong> and <strong>strong</strong>. 
+                        As women, with or without a child, we bare these characteristics and hence this page bared the name Maia. Our hope is that
+                        one through this platform, you will gain a sense of support and remember that you are not and do not have to 
+                        ride these tides alone. 
+                      </p>
+          </div>
         </div>
 
 
               <div class="col-md-11">
-              <img width="600px" height="600px" src="../images/my_story.jpg" alt="story"">
-              <blockquote>
+              <img width="600px" height="600px"  src="../static/images/my_story.jpg" alt="story" style="vertical-align:middle">
+              
                 <p>There is a community of sisters, of friends, of families out there who have rode the wave in front of you
                   and some who will want to hear your story of how you overcame. We are here to <strong><i>listen, share,advice and or be a friends</i></strong>
                   to you at this time in your life.</p>
                 <footer><cite title="Source Title">Before we can come closer to resolving an issue, we must first identify that there is an issue.</cite></footer>
-              </blockquote>
+              
               <p>
 
                 <br>

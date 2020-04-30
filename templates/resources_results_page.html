@@ -54,10 +54,19 @@
               </div>
             </li>
           </ul>
-        
-<form class="form-inline my-6 my-lg-0">
-  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+          <form id="frmSearch" class="search2" method="get" action="default.html" autocomplete="off" />
+          <input class="search2" autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+          value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
+          <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding-  
+          bottom:20px; left: 691px; top: 153px; height: 23px" />
+          <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+
+          <script type="text/javascript">
+            document.getElementById('frmSearch').onsubmit = function() {
+                window.location = 'http://www.google.com/search?q=site:google.com ' + document.getElementById('txtSearch').value;
+                return false;
+            }
+          </script>
 </form>
 </div>
 </nav>

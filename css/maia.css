@@ -22,13 +22,11 @@
 }
 
 .header h1{
-  position: absolute;
-  top: 50%;
-
-  font-size:90px;
+  float: left;;
+  font-size:20px;
   text-align: left;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
