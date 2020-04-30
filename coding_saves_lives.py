@@ -46,6 +46,7 @@ def resources_results():
                 return render_template("Results_page_XXX.html")
         else:
                 return render_template("resources_list_page.html")
+        
 
 @app.route("/resources_list")
 def resources_list():
