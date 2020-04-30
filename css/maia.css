@@ -17,13 +17,13 @@
 
 .h1{
   font-size: 48px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
 }
 
 .header h1{
   float: left;;
-  font-size:20px;
+  font-size:50px;
   text-align: left;
   text-decoration: none;
   margin-left: 0rem;
@@ -48,10 +48,6 @@
   font-size: 20px;
 }
 
-question_nav {
-        text-decoration: none;
-        color: aliceblue;
-}
 
 #row_one p{
   font-size: 20px;
