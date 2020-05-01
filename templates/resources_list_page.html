@@ -62,50 +62,48 @@
                       </div>
                       </div>
                       
-                      <!--nav bar-->
                       <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-                        <a class="navbar-brand" href="landing_page.html">Maia</a>
+                        <a class="navbar-brand" href="/">Maia</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                           <ul class="navbar-nav">
                             <li class="nav-item">
-                              <a class="nav-link" href="landing_page.html">Home<span class="sr-only">(current)</span></a>
+                              <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="about_us.html">About us</a>
+                              <a class="nav-link" href="/about">About us</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="what_is_domestic_abuse.html">What is domestic abuse?</a>
+                              <a class="nav-link" href="/identify_it">What is domestic abuse?</a>
                             </li>
                             <li class="nav-item dropdown active">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                Get help<span class="sr-only">(current)</span>
                               </a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="resources_quiz_page.html">I don't know where to Look</a>
-                                <a class="dropdown-item" href="resources_list_page.html">List of charities</a>
+                                <a class="dropdown-item" href="/resources">I don't know where to Look</a>
+                                <a class="dropdown-item" href="/resources_list">List of charities</a>
                               </div>
                               
                             </li>
                               </div>
+                              <form id="frmSearch" class="search2" method="get" action="default.html" autocomplete="off" />
+                              <input class="search2" autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+                              value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
+                              <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding- bottom: 20px; left: 691px; top: 153px; height: 23px;" />
+                              <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+            
+                              <script type="text/javascript">
+                                document.getElementById('frmSearch').onsubmit = function() {
+                                    window.location = 'http://www.google.com/search?q=site:google.com ' + document.getElementById('txtSearch').value;
+                                    return false;
+                                }
+                              </script>
                             </li>
                           </ul>
-                        
-                          <form id="frmSearch" class="search2" method="get" action="default.html" autocomplete="off" />
-                          <input class="search2" autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
-                          value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
-                          <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding-  
-                          bottom:20px; left: 691px; top: 153px; height: 23px" />
-                          <input class="search2" type="hidden" name="sitesearch" value="default.html" />
-        
-                          <script type="text/javascript">
-                            document.getElementById('frmSearch').onsubmit = function() {
-                                window.location = 'http://www.google.com/search?q=site:google.com ' + document.getElementById('txtSearch').value;
-                                return false;
-                            }
-                          </script>
+                        </div>
                 </div>
               </nav>
             </div>
