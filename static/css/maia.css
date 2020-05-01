@@ -28,13 +28,13 @@
 h1{
   font-size: 48px;
   text-align: center;
-  text-decoration: underline;
+  color: cornflowerblue;
 }
 
 .header h1{
   font-size:190px;
   text-align: center;
-  text-decoration: underline;
+  color: cornflowerblue;
 }
 .footer {
   background-color: lightblue;
