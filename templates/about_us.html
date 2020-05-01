@@ -2,30 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/maia.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- stylesheets -->
-    <link rel="stylesheet" href="../static/css/stylesheet0.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="../static/js/appjavascript0.js"></script>
-    <!--homepage spceific - welcome message-->
-    <script src="../static/js/landing_page_js.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/maia.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- stylesheets -->
+<link rel="stylesheet" href="../static/css/stylesheet0.css">
+<link rel="stylesheet" href="../static/css/maia.css">
+<link rel="stylesheet" type="text/css" href="../css/maia.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- scripts-->
+<script src="../static/js/appjavascript0.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-       <!-- title: CHANGE ME -->
-        <title>About Maia</title>
+
+  <!-- title: CHANGE ME -->
+    <title>About</title>
     </head>
-    <body>
-           <!-- Code for button -->
-  <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html" class="floating-button">
-    <b class="fa my-float">!</b> </a>
-  <!-- end of button code-->   
-  <!-- code for header-->       
+
+  
+  <body>
+       <!-- Code for button -->
+       <a  onclick=event.preventDefault();window.location.replace(href="/error_404_display") href="/error_404_display" class="floating-button">
+        <b class="fa my-float">!</b> </a>
+      <!-- end of button code-->   
+    
+
+  <!-- code for header and navbar-->       
     <div id="banner">
               <style>
                   div.background {
@@ -60,28 +64,28 @@
                   
                   <!--nav bar-->
                   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-                    <a class="navbar-brand" href="landing_page.html">Maia</a>
+                    <a class="navbar-brand" href="/">Maia</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                       <ul class="navbar-nav">
                         <li class="nav-item">
-                          <a class="nav-link" href="landing_page.html">Home<span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="about_us.html">About us</a>
+                          <a class="nav-link" href="/about">About us<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="what_is_domestic_abuse.html">What is domestic abuse?</a>
+                          <a class="nav-link" href="/identify_it">What is domestic abuse?</a>
                         </li>
                         <li class="nav-item dropdown active">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Get help<span class="sr-only">(current)</span>
+                           Get help
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="resources_quiz_page.html">I don't know where to Look</a>
-                            <a class="dropdown-item" href="resources_list_page.html">List of charities</a>
+                            <a class="dropdown-item" href="/resources">I don't know where to Look</a>
+                            <a class="dropdown-item" href="/resources_list">List of charities</a>
                           </div>
                           
                         </li>
@@ -89,8 +93,7 @@
                           <form id="frmSearch" class="search2" method="get" action="default.html" autocomplete="off" />
                           <input class="search2" autocomplete="off" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
                           value="" style="left: 396px; top: 153px; width: 253px; height: 26px;" />
-                          <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding-  
-                          bottom:20px; left: 691px; top: 153px; height: 23px" />
+                          <input class="search1" autocomplete="off" type="submit" name="submition" value="Search" style=" padding- bottom: 20px; left: 691px; top: 153px; height: 23px;" />
                           <input class="search2" type="hidden" name="sitesearch" value="default.html" />
         
                           <script type="text/javascript">
@@ -98,7 +101,7 @@
                                 window.location = 'http://www.google.com/search?q=site:google.com ' + document.getElementById('txtSearch').value;
                                 return false;
                             }
-                        </script>
+                          </script>
                         </li>
                       </ul>
                     </div>
@@ -185,52 +188,55 @@
 <br>
 
 
-                    <!-- Footer -->
-  <footer class="page-footer bg-info font-small text-white pt-2">
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
-          
-              <!-- Grid row -->
-              <div class="row">
-          
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-                  <!-- Content -->
-                  <h5 class="text-uppercase"><strong>Maia</strong></h5>
-                  <p><i>We Are All Here With You.</i></p>
-                </div>
-                <!-- Grid column -->
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                  <!-- Links -->
-                
-          
-                  <ul class="list-unstyled text-uppercase">
-                    <li>
-                      <a href="resources_list_page.html">Resources</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Grid column -->
         
-              
-          </div>
-          
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-              <a href="#"> Maia</a>
-            </div>
-            <!-- Copyright -->
-          
-  </footer>
-                
-<!-- Code for link to error page -->
-<div>
-  <a  onclick=event.preventDefault();window.location.replace(href="Error_404_Display.html") href="Error_404_Display.html">
-    <p>Click here to hide the page. You will not be able to press back to return here.</p>
-    </a>   
-  </div>
-                
-</div></body>
-</html>
+                <!-- Footer -->
+                <div id="footer">
+                  <footer class="page-footer bg-info font-small text-white pt-2">
+                            <!-- Footer Links -->
+                            <div class="container-fluid text-center text-md-left">
+                          
+                              <!-- Grid row -->
+                              <div class="row">
+                          
+                                <!-- Grid column -->
+                                <div class="col-md-6 mt-md-0 mt-3">
+                                  <!-- Content -->
+                                  <h5 class="text-uppercase"><strong>Maia</strong></h5>
+                                  <p class="small"><i>We Are All Here With You.</i></p>
+                                </div>
+                                <!-- Grid column -->
+                                <hr class="clearfix w-100 d-md-none pb-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 mb-md-0 mb-3">
+                                  <!-- Links -->
+                                
+                          
+                                  <ul class="list-unstyled text-uppercase">
+                                    <li>
+                                      <a href="/resources">Resources</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <!-- Grid column -->
+                        
+                              
+                          </div>
+                          
+                            <!-- Copyright -->
+                            <div class="footer-copyright text-center py-3"><p>© 2020 Copyright:</p>
+                              <a href="/">Maia</a>
+                            </div>
+                           
+                          
+                  
+                </div>               
+                <!-- Code for link to error page -->
+                  <div>
+                    <a onclick=event.preventDefault();window.location.replace(href="/error_404_display") href="/error_404_display">
+                      <p>Click here to hide the page. You will not be able to press back to return here.</p>
+                    </a>   
+                  </div>
+                </footer>
+                </div>               
+                </div></body>
+                </html>
