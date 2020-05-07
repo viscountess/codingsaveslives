@@ -19,7 +19,7 @@ def resources_results():
         GenderSelect = form_data["GenderSelect"]
         LGBTQIASupport = form_data["LGBTQIASupport"]
         HousingSupport = form_data["HousingSupport"]
-        
+
         if GenderSelect == "Male" and LGBTQIASupport == "Yes" and HousingSupport == "Yes":
                 return render_template("Results_page_MLH_FLH_XLH.html")
         elif GenderSelect == "Male" and LGBTQIASupport == "Yes" and HousingSupport == "No":
@@ -46,7 +46,7 @@ def resources_results():
                 return render_template("Results_page_XXX.html")
         else:
                 return render_template("resources_list_page.html")
-        
+
 
 @app.route("/resources_list")
 def resources_list():
@@ -72,4 +72,6 @@ def what_is_domestic_abuse():
         return render_template("what_is_domestic_abuse.html") #runs the fact that this url shows the PP page
 
 #debugging
-app.run(debug=True) #runs the app. the debug part - unlocks debugging feature.
+import os
+port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0', port=port) #runs the app. the debug part - unlocks debugging feature.
